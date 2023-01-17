@@ -1,4 +1,4 @@
-import fs from 'node:fs'
+import fs  from 'node:fs'
 import path from 'node:path'
 import https from 'node:https'
 import crypto from 'node:crypto'
@@ -15,7 +15,7 @@ export class KVK {
 
   constructor(
     apiKey: string,
-    baseUrl: string | null,
+    baseUrl?: string | null,
     certificate?: string | null,
     httpsAgent?: https.Agent | null
   ) {
