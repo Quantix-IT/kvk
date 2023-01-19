@@ -141,7 +141,7 @@ export class KVK {
       throw new Error('KVK: Ongeldig kvknummer.')
 
     return await this.request({
-      endpoint: `/basisprofiel/${kvkNummer}`,
+      endpoint: `/basisprofielen/${kvkNummer}`,
       params: {
         geoData,
       },
@@ -156,7 +156,7 @@ export class KVK {
       throw new Error('KVK: Ongeldig kvknummer.')
 
     return await this.request({
-      endpoint: `/basisprofiel/${kvkNummer}/eigenaar`,
+      endpoint: `/basisprofielen/${kvkNummer}/eigenaar`,
       params: {
         geoData,
       },
@@ -171,7 +171,7 @@ export class KVK {
       throw new Error('KVK: Ongeldig kvknummer.')
 
     return await this.request({
-      endpoint: `/basisprofiel/${kvkNummer}/hoofdvestiging`,
+      endpoint: `/basisprofielen/${kvkNummer}/hoofdvestiging`,
       params: {
         geoData,
       },
@@ -183,7 +183,7 @@ export class KVK {
       throw new Error('KVK: Ongeldig kvknummer.')
 
     return await this.request({
-      endpoint: `/basisprofiel/${kvkNummer}`,
+      endpoint: `/basisprofielen/${kvkNummer}`,
     })
   }
 
