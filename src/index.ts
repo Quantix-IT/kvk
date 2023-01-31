@@ -1,7 +1,7 @@
-import fs  from 'node:fs'
-import path from 'node:path'
-import https from 'node:https'
-import crypto from 'node:crypto'
+import * as fs  from 'node:fs'
+import * as path from 'node:path'
+import * as https from 'node:https'
+import * as crypto from 'node:crypto'
 import fetch from 'node-fetch'
 
 const BASE_URL = 'https://api.kvk.nl/api/v1'
