@@ -183,7 +183,7 @@ export class KVK {
       throw new Error('KVK: Ongeldig kvknummer.')
 
     return await this.request({
-      endpoint: `/basisprofielen/${kvkNummer}`,
+      endpoint: `/basisprofielen/${kvkNummer}/vestigingen`,
     })
   }
 
